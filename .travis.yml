@@ -8,3 +8,4 @@ deploy:
   app: afternoon-wildwood-1633
   on:
     repo: yosukeota/enpit_miniproj
+  run: "rake db:migrate"
