@@ -1,15 +1,16 @@
 <h1>Enpit mini project team B</h1>
 
-<form action="<%= calculate_add_path %>" method="POST">
+<form >
     <input type="input"  name="a">
     <input type="input"  name="b">
-    <input type="submit" name="add" value = "+"> 
-    <input type="submit" name="sub" value = "-">
-    <input type="submit" name="multi" value = "*">
-    <input type="submit" name="divid" value = "/">
+    <input type="submit" name="add" value = "+" action="<%= calculate_add_path %>" method="POST">
+    <input type="submit" name="sub" value = "-" action="<%= calculate_sub_path %>" method="POST">
+    <input type="submit" name="multi" value = "*" action="<%= calculate_multiply_path %>" method="POST">
+    <input type="submit" name="divid" value = "/" action="<%= calculate_divid_path %>" method="POST">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 </form>
 
+<%=  @c %>
 <% if ! @c.nil? %>
 <h2>答え</h2>
 <h3> <%= @c %>  </h3>
