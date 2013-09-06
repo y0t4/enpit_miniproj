@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.0.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: YJ5RKkQXzd5+KxoM0AhcC8bTT2eRTxCX7Re9LdRd/EBjwOERxeaftcIjx3q6bxhEAqrtBQ2p/xmvU5gnBG0d9x8HSJi1TDbgIJFIOBuIUgB9vQ+1ie6wDWbQao2yNCREfBgAk7I5jLeAyPWvPhkfJX9+PX1NQlGJ19cWZR6NJE0=
+  app: afternoon-wildwood-1633
+  on:
+    repo: yosukeota/enpit_miniproj
