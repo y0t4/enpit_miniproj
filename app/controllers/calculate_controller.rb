@@ -1,5 +1,5 @@
 class CalculateController < ApplicationController
-  def add
+  def calc
      a = params['a'].to_i
      b = params['b'].to_i
      func = params['func']
@@ -14,14 +14,5 @@ class CalculateController < ApplicationController
      	@c = a/b
      end
      render 'calculate/index'
-  end
-
-  def sub
-  end
-
-  def multiply
-  end
-
-  def divid
   end
 end
