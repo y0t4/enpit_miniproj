@@ -1,4 +1,13 @@
 EnpitMiniproj::Application.routes.draw do
+  #get "calculate/sub"
+  #get "calculate/multiply"
+  #get "calculate/divid"
+  #get  "/calculate"  => 'calculate'
+  #post "/calculate_add"  => 'calclulate'
+
+  get "/calculate/add" => 'calculate#add'
+  post "/calculate/add" => 'calculate#add'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
