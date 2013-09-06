@@ -6,14 +6,18 @@ ruby '2.0.0'
 
 group :test do
   gem 'rake'
-#  gem 'rspec-rails'
-#  gem 'capybara'
 end
 
 gem 'rails_12factor', group: :production
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
